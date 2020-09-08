@@ -1,0 +1,83 @@
+body {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+.list-title {
+  text-align: left;
+  color: var(--primary-text-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.list-text {
+  text-align: left;
+  margin-top: 4px;
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
+.btn {
+  padding: 6px 22px;
+  border-style: none;
+  background: #f5f4fa;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  padding: 6px 22px;
+  border-style: none;
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  color: var(--pure-white-color);
+}
+
+.our-examples {
+  text-align: center;
+  margin-top: 94px;
+}
+
+.grid-container {
+  margin-top: 34px;
+  margin-bottom: 94px;
+}
+
+.grid-item-container a {
+  text-decoration: none;
+}
+
+.grid-item-container:hover,
+.grid-item-container:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.card-grid {
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-basis: calc((100% - 8 * 30px) / 9);
+}
+
+.grid-item {
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+.grid-item:nth-child(3n) {
+  padding-right: 0px;
+}
+
+.list-container {
+  padding: 20px 24px;
+  text-align: left;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+.grid-item img {
+  display: block;
+}

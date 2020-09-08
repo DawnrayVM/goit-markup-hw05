@@ -1,0 +1,233 @@
+/*
+Основной цвет текста: #212121
+Вторичный цвет текста: #757575
+Основной акцент: #2196F3
+Белый текст и основной фон: #FFFFFF
+Цвет текста футера: rgba(255, 255, 255, 0.6);
+Вторичный цвет фона: #2F303A
+*/
+
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --main-accent: #2196f3;
+  --pure-white-color: #ffffff;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --secondary-bg-color: #2f303a;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.page-header {
+  background-color: var(--pure-white-color);
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+}
+
+.container {
+  width: 1200px;
+  padding: 0px 15px 0 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  /*outline: 2px solid tomato;*/
+}
+.justify-center {
+  align-items: center;
+  justify-content: flex-end;
+}
+/* шапка странички*/
+.main-nav {
+  margin-right: auto;
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  inline-size: 1.2;
+}
+.accent {
+  color: var(--main-accent);
+}
+.site-nav {
+  margin-left: 93px;
+}
+.site-nav .link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0px;
+}
+.main-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--main-accent);
+}
+
+.site-nav .current {
+  color: var(--main-accent);
+}
+
+.header-contacts .link {
+  text-decoration: none;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--secondary-text-color);
+}
+
+.header-contacts .link:hover,
+.header-contacts .link:focus {
+  color: var(--main-accent);
+  text-decoration: underline;
+}
+
+.header-contacts .item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-contacts a {
+  display: flex;
+  flex-direction: row;
+}
+.header-contacts svg {
+  display: inline-block;
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.header-contacts .link:hover svg,
+.header-contacts .link:focus svg {
+  fill: var(--main-accent);
+}
+
+/* футер */
+
+.footer {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  background-color: var(--secondary-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-logo {
+  text-decoration: none;
+  color: var(--pure-white-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  inline-size: 1.2;
+}
+.address {
+  font-weight: 400;
+  font-style: normal;
+  color: var(--pure-white-color);
+  letter-spacing: 0.03em;
+  margin-top: 20px;
+}
+.adress-text {
+  display: block;
+}
+.address-item {
+  display: block;
+  text-decoration: none;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--footer-text-color);
+  margin-top: 9px;
+}
+
+.address-item:hover,
+.address-item:focus {
+  color: var(--main-accent);
+  text-decoration: underline;
+}
+.adress-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+}
+
+.social-links .link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  fill: #afb1b8;
+}
+
+.list-link {
+  margin-right: 10px;
+  flex-basis: calc((100% - 3 * 10px) / 4);
+}
+
+.list-link:last-child {
+  margin-right: 0px;
+}
+
+.link-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.join-us {
+  padding-top: 20px;
+}
+
+.social-join-us h2 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--pure-white-color);
+  margin-top: 15px;
+}
+
+.social-links .join {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  fill: #ffffff;
+}
+
+.social-links .join {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.social-links .join:hover,
+.social-links .join:focus {
+  background-color: var(--main-accent);
+  border-radius: 50%;
+}
