@@ -339,7 +339,7 @@ body {
 }
 
 .is-hidden {
-  visibility: hidden;
+  display: none;
 }
 
 .modal svg {
